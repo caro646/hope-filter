@@ -19,9 +19,9 @@ for item in image_list:
     intensity = item[0]+item[1]+item[2]
     if intensity < 182:
         recolored.append (darkBlue)
-    if intensity >= 182 and sum(item) <364:
+    if intensity >= 182 and intensity <364:
         recolored.append (red)
-    if intensity >= 364 and sum(item)<546:
+    if intensity >= 364 and intensity <546:
         recolored.append (lightBlue)
     if intensity >= 546:
         recolored.append (yellow)
